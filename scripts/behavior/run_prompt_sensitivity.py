@@ -568,9 +568,23 @@ def resolve_variants(names: list[str]) -> list[VariantSpec]:
     return variants
 
 
-def variant_complete(model: ModelSpec, variant: VariantSpec, readout: str, expected_n: int) -> bool:
+def expected_subject_ids(max_subjects: int | None, seed: int) -> list[str]:
+    scale_name, scale_def_path = SCALES[0]
+    scale_def, items = load_scale_definition(scale_def_path)
+    data_sources = [f"data/human/{ds}/{scale_name}.csv" for ds in HUMAN_DATASETS]
+    profiles = load_real_profiles(data_sources, scale_def, items, scale_name)
+    _, selected_subject_ids = sample_profiles(profiles, max_subjects, seed)
+    return selected_subject_ids
+
+
+def variant_complete(
+    model: ModelSpec,
+    variant: VariantSpec,
+    readout: str,
+    expected_ids: list[str],
+) -> bool:
     root = data_root_for(model, variant, readout)
-    return all(rotation_complete(root / f"persona_{scale_name}", expected_n) for scale_name, _ in SCALES)
+    return all(rotation_complete(root / f"persona_{scale_name}", expected_ids) for scale_name, _ in SCALES)
 
 
 def main() -> None:
@@ -589,7 +603,7 @@ def main() -> None:
 
     models = resolve_models(args.models)
     variants = resolve_variants(args.variants)
-    expected_n = args.max_subjects or 272
+    expected_ids = expected_subject_ids(args.max_subjects, args.seed)
 
     print("=" * 72)
     print("  PROMPT VARIANTS")
@@ -600,7 +614,7 @@ def main() -> None:
                 if variant.instruct_only and not model.is_instruct:
                     status = "skip: instruct only"
                 else:
-                    done = variant_complete(model, variant, readout, expected_n)
+                    done = variant_complete(model, variant, readout, expected_ids)
                     status = "done" if done else "pending"
                 print(f"  {model.mech_name:<20} {variant.name:<18} {readout:<15} {status}")
 
@@ -617,7 +631,7 @@ def main() -> None:
                 continue
 
             completed = {
-                readout: variant_complete(model, variant, readout, expected_n)
+                readout: variant_complete(model, variant, readout, expected_ids)
                 for readout in args.readouts
             }
 
