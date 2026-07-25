@@ -1,0 +1,5 @@
+relationship,statistic,point,bootstrap_mean,bootstrap_ci_lo,bootstrap_ci_hi,bootstrap_n,loo_mean,loo_min,loo_max,loo_n,n_models,source
+repr_corrected_slope_vs_beh_subscale_slope,pearson_r,0.6399991327109903,0.6211537935289788,0.1314886839707974,0.884248516193777,5000,0.6384297347242452,0.5253923127058266,0.7422544080016162,14,14,outputs/mechanistic/structure_vs_behavior.csv
+repr_corrected_slope_vs_beh_subscale_slope_partial_log_size,partial_r,0.6959539108075572,0.6868230470209136,0.23325391789120986,0.940660799731795,5000,0.6951786902849263,0.6068197940662494,0.8647389810358999,14,14,outputs/mechanistic/structure_vs_behavior.csv
+repr_mantel_r_vs_beh_subscale_slope,pearson_r,0.6776171222727085,0.6489672537589218,0.1857869891086647,0.8715416891426425,5000,0.6760728184513309,0.5762646236943785,0.7369402275667161,14,14,outputs/mechanistic/structure_vs_behavior.csv
+repr_mantel_r_vs_beh_subscale_slope_partial_log_size,partial_r,0.690746177150096,0.6882879594548548,0.34335406217743897,0.9108982581503053,5000,0.6917738041015238,0.6274766907690146,0.7884420629358831,14,14,outputs/mechanistic/structure_vs_behavior.csv

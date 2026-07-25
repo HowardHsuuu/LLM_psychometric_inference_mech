@@ -1,0 +1,8 @@
+model,variant,readout,level,matrix_r,r,slope,rmse,n_pairs,source
+qwen14b_instruct,baseline_raw,argmax,item,0.7078171782310907,,,0.2071497787111019,6003,outputs/behavior/qwen14b_instruct_v3/comparison_metrics.csv
+qwen14b_instruct,baseline_raw,argmax,item_within,,0.9980734519106732,1.0088287676744203,0.0159451155079558,1110,outputs/behavior/qwen14b_instruct_v3/comparison_metrics.csv
+qwen14b_instruct,baseline_raw,argmax,item_between,,0.6544276466938466,1.2263202744437798,0.2293205668317229,4893,outputs/behavior/qwen14b_instruct_v3/comparison_metrics.csv
+qwen14b_instruct,baseline_raw,argmax,subscale,0.7935920171318102,,,0.3012947813908271,116,outputs/behavior/qwen14b_instruct_v3/comparison_metrics.csv
+qwen14b_instruct,baseline_raw,argmax,subscale_within,,0.9999690487476476,1.0003284727501467,0.0016949590033493,18,outputs/behavior/qwen14b_instruct_v3/comparison_metrics.csv
+qwen14b_instruct,baseline_raw,argmax,subscale_between,,0.7960533480165144,1.3849316659206778,0.3277981512766746,98,outputs/behavior/qwen14b_instruct_v3/comparison_metrics.csv
+qwen14b_instruct,baseline_raw,argmax,scale,0.8430227205395835,,,0.2581162679867745,21,outputs/behavior/qwen14b_instruct_v3/comparison_metrics.csv

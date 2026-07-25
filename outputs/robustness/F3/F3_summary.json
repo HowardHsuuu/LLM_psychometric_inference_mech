@@ -1,0 +1,64 @@
+{
+  "n_models": 9,
+  "n_pair_observations": 1080,
+  "anova_F": 5.184033778097263,
+  "anova_p": 2.8681750664914806e-05,
+  "by_pair_type": [
+    {
+      "pair_type": "affect_affect",
+      "n": 180,
+      "mean_abs_diff": 0.2722282248383676,
+      "median_abs_diff": 0.28112681770419334,
+      "mean_signed_diff": -0.004900737162391765,
+      "mean_amp_ratio": 1.8111598990556308
+    },
+    {
+      "pair_type": "affect_cognitive",
+      "n": 216,
+      "mean_abs_diff": 0.18802190191547613,
+      "median_abs_diff": 0.15928668670857565,
+      "mean_signed_diff": 0.10557047222757722,
+      "mean_amp_ratio": 4.131386330507746
+    },
+    {
+      "pair_type": "affect_social",
+      "n": 288,
+      "mean_abs_diff": 0.2636933181193626,
+      "median_abs_diff": 0.24053194924078602,
+      "mean_signed_diff": 0.088912547885585,
+      "mean_amp_ratio": 1.5013547508572753
+    },
+    {
+      "pair_type": "cognitive_cognitive",
+      "n": 36,
+      "mean_abs_diff": 0.2053332748556685,
+      "median_abs_diff": 0.17935485629361703,
+      "mean_signed_diff": 0.16368079784164363,
+      "mean_amp_ratio": 2.7683359640647276
+    },
+    {
+      "pair_type": "cognitive_social",
+      "n": 126,
+      "mean_abs_diff": 0.17925577259978914,
+      "median_abs_diff": 0.16920359309805982,
+      "mean_signed_diff": 0.13125209972234564,
+      "mean_amp_ratio": 2.060187834825211
+    },
+    {
+      "pair_type": "social_social",
+      "n": 72,
+      "mean_abs_diff": 0.19015174602777554,
+      "median_abs_diff": 0.1373542125768728,
+      "mean_signed_diff": 0.09480857774184247,
+      "mean_amp_ratio": 1.3758961322096184
+    },
+    {
+      "pair_type": "within_scale",
+      "n": 162,
+      "mean_abs_diff": 0.22878959093719306,
+      "median_abs_diff": 0.20734635520542938,
+      "mean_signed_diff": 0.06013946112191833,
+      "mean_amp_ratio": 2.013525094543163
+    }
+  ]
+}

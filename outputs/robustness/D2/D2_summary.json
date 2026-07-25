@@ -1,0 +1,20 @@
+{
+  "n_models": 9,
+  "models": [
+    "qwen05b_instruct",
+    "llama1b_instruct",
+    "qwen3b_instruct",
+    "llama3b_instruct",
+    "qwen7b_instruct",
+    "llama8b_instruct",
+    "llama8b_base",
+    "qwen14b_instruct",
+    "qwen14b_base"
+  ],
+  "slope_mean_diff_stable_minus_specific": -0.41700050872683686,
+  "slope_t_p": 9.562057410350763e-06,
+  "slope_wilcoxon_p": 0.00390625,
+  "mantel_mean_diff_stable_minus_specific": -0.24559284906332943,
+  "mantel_t_p": 1.1702729683497105e-06,
+  "mantel_wilcoxon_p": 0.00390625
+}

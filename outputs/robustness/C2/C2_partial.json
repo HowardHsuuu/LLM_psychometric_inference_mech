@@ -1,0 +1,29 @@
+{
+  "zero_order": {
+    "n": 14,
+    "r": 0.6776171222727088,
+    "p": 0.007748852909770423,
+    "boot_ci_lo": 0.1785335418811782,
+    "boot_ci_hi": 0.8756924342633565
+  },
+  "partial": {
+    "log_size": {
+      "controls": "log_size",
+      "n_controls": 1,
+      "partial_r": 0.6907461771500965,
+      "partial_p": 0.007231743368011032
+    },
+    "log_size+mtype": {
+      "controls": "log_size+mtype",
+      "n_controls": 2,
+      "partial_r": 0.5453558956560872,
+      "partial_p": 0.0664698573255898
+    },
+    "log_size+mtype+family": {
+      "controls": "log_size+mtype+family",
+      "n_controls": 3,
+      "partial_r": 0.4279395511920534,
+      "partial_p": 0.19578905186075843
+    }
+  }
+}

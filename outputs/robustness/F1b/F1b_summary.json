@@ -1,0 +1,11 @@
+{
+  "n_models": 14,
+  "mean_slope_spread_adj1": 0.02489054516136636,
+  "max_slope_spread_adj1": 0.118415983631731,
+  "mean_slope_spread_adj2": 0.04339097284837905,
+  "max_slope_spread_adj2": 0.1365725144178162,
+  "mean_mantel_spread_adj1": 0.030322958719234874,
+  "mean_mantel_spread_adj2": 0.05023611076239211,
+  "paper_claim_adj_spread_lt_005": false,
+  "cross_model_slope_spread": 0.9405591057165313
+}

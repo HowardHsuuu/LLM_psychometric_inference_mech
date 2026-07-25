@@ -1,0 +1,21 @@
+{"_metadata": true, "scale_id": "loneliness", "scale_name": "UCLA Loneliness Scale", "scale_name_zh": "寂寞量表", "n_items": 20, "response_range": [1, 4], "response_labels": ["完全沒有", "很少", "有時候", "常常"], "instruction": "請你針對以下敘述，評量你同意每個敘述的程度。", "instruction_en": "Indicate how often each of the statements below is descriptive of you.", "reverse_items": [1,5,6,9,10,15,16,19,20], "subscales": [{"name": "Loneliness", "items": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], "scoring": "mean"}]}
+{"item_id": "lon_01", "item_number": 1, "text": "您多常感覺自己可以和周圍的朋友打成一片？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}
+{"item_id": "lon_02", "item_number": 2, "text": "您多常覺得自己缺少真心相待的友誼？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_03", "item_number": 3, "text": "您多常感到自己沒有可以放心依靠的朋友？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_04", "item_number": 4, "text": "您多常覺得自己是孤單的？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_05", "item_number": 5, "text": "您多常感到自己是朋友中一份子？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}
+{"item_id": "lon_06", "item_number": 6, "text": "您多常覺得和身邊的朋友有許多相同之處？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}
+{"item_id": "lon_07", "item_number": 7, "text": "您多常覺得自己和周圍的人有個距離？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_08", "item_number": 8, "text": "您多常感覺身邊的人不能了解自己的想法？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_09", "item_number": 9, "text": "您多常覺得自己是個受歡迎、好相處的人？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}
+{"item_id": "lon_10", "item_number": 10, "text": "您多常覺得自己與親友間的關係很親近？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}
+{"item_id": "lon_11", "item_number": 11, "text": "您多常覺得自己是被遺忘？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_12", "item_number": 12, "text": "您多常感到自己和周遭朋友的友誼關係沒有實質意義？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_13", "item_number": 13, "text": "您多常覺得沒有人真正了解自己？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_14", "item_number": 14, "text": "您多常感覺自己被周圍的人孤立？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_15", "item_number": 15, "text": "您多常感到當自己想要有人陪伴時，就可以找到人陪伴？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}
+{"item_id": "lon_16", "item_number": 16, "text": "您多常覺得有真正了解自己的朋友？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}
+{"item_id": "lon_17", "item_number": 17, "text": "您多常在人前感到害羞？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_18", "item_number": 18, "text": "您多常覺得自己身邊有許多朋友，但卻不是知己？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": false, "subscale": "Loneliness"}
+{"item_id": "lon_19", "item_number": 19, "text": "您多常覺得自己有可以談心事的對象？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}
+{"item_id": "lon_20", "item_number": 20, "text": "您多常感到自己在需要時有人可以依靠？", "text_en": null, "response_options": [1,2,3,4], "reverse_coded": true, "subscale": "Loneliness"}

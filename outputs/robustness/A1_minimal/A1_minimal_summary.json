@@ -1,0 +1,18 @@
+{
+  "n_total_runs": 180,
+  "slope_vs_ref_mean": 1.288612045068723,
+  "slope_vs_ref_std": 0.09583038950581421,
+  "slope_vs_ref_min": 1.1575790674214608,
+  "slope_vs_ref_max": 1.5046700856450295,
+  "slope_vs_human_mean": 1.2967442491950143,
+  "slope_vs_human_std": 0.11736417680129489,
+  "slope_vs_human_max": 1.5898126746928483,
+  "mantel_overall_mean": 0.9943635402310476,
+  "ground_truth_slope": 1.0,
+  "paper_real_slope_range": [
+    1.38,
+    1.77
+  ],
+  "elapsed_sec": 57.756629943847656,
+  "verdict": "MODERATE: pipeline adds inflation of 1.289 above ground truth. This cannot alone explain the real-model range [1.38, 1.77] (gap \u2265 0.09) but is a non-trivial component."
+}

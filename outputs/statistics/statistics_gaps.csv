@@ -1,0 +1,10 @@
+item,status,note
+profile_level_behavior_controls,available,Factorial/random/collapsed profile controls are behavioral/profile-level diagnostics; they do not include activation geometry.
+factorial_profile_geometry_results,not_cached_yet,Run python -m psychometric_inference.mechanisms.factorial_geometry to extract/analyze activation geometry for factorial profile controls.
+prompt_variant_behavior_results,not_cached_yet,Run scripts/behavior/run_prompt_sensitivity.py to populate outputs/prompt_variants/.
+probability_readout_behavior_results,not_cached_yet,Run scripts/behavior/run_prompt_sensitivity.py with --readouts expected_value to compare probability-derived readout against argmax.
+prompt_variant_geometry_results,not_cached_yet,Run python -m psychometric_inference.mechanisms.prompt_geometry to populate prompt/scale-name geometry robustness summaries.
+behavior_matrix_slope_ci,available,Cached aggregate-matrix bootstrap and leave-one-construct diagnostics for subscale/scale slopes.
+geometry_mantel_ci,available,Cached geometry-matrix bootstrap and leave-one-construct diagnostics for Mantel-style alignment r.
+representation_behavior_ci,available,Cached model-bootstrap and leave-one-model diagnostics for representation-behavior relationships.
+robustness_inventory,available,Existing A/F/D robustness artifacts are inventoried in robustness_inventory.csv.

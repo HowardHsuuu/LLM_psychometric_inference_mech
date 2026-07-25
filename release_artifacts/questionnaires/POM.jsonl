@@ -1,0 +1,8 @@
+{"_metadata": true, "scale_id": "pom", "scale_name": "Peace of Mind (POM)", "scale_name_zh": "安適量表", "n_items": 7, "response_range": [1, 6], "response_labels": ["非常不符合", "相當不符合", "不太符合", "還算符合", "相當符合", "非常符合"], "instruction": "請你針對以下敘述，評量你同意每個敘述的程度。", "instruction_en": "Please indicate how well each statement describes you.", "reverse_items": [5,7], "subscales": [{"name": "Peace_of_Mind", "items": [1,2,3,4,5,6,7], "scoring": "mean"}]}
+{"item_id": "pom_01", "item_number": 1, "text": "我的內心是舒服而且自在的。", "text_en": null, "response_options": [1,2,3,4,5,6], "reverse_coded": false, "subscale": "Peace_of_Mind"}
+{"item_id": "pom_02", "item_number": 2, "text": "我的內心是輕鬆自在的。", "text_en": null, "response_options": [1,2,3,4,5,6], "reverse_coded": false, "subscale": "Peace_of_Mind"}
+{"item_id": "pom_03", "item_number": 3, "text": "在生活中我覺得怡然自得。", "text_en": null, "response_options": [1,2,3,4,5,6], "reverse_coded": false, "subscale": "Peace_of_Mind"}
+{"item_id": "pom_04", "item_number": 4, "text": "我的生活給我一種平靜安穩的感覺。", "text_en": null, "response_options": [1,2,3,4,5,6], "reverse_coded": false, "subscale": "Peace_of_Mind"}
+{"item_id": "pom_05", "item_number": 5, "text": "要讓自己擁有內心的安定感是很困難的。", "text_en": null, "response_options": [1,2,3,4,5,6], "reverse_coded": true, "subscale": "Peace_of_Mind"}
+{"item_id": "pom_06", "item_number": 6, "text": "我擁有內心的平靜與和諧。", "text_en": null, "response_options": [1,2,3,4,5,6], "reverse_coded": false, "subscale": "Peace_of_Mind"}
+{"item_id": "pom_07", "item_number": 7, "text": "我的內心感到焦躁不安。", "text_en": null, "response_options": [1,2,3,4,5,6], "reverse_coded": true, "subscale": "Peace_of_Mind"}

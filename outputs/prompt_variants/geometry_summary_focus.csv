@@ -1,0 +1,3 @@
+model,variant,level,layer,mantel_r,mantel_p,slope,source
+qwen14b_instruct,baseline_raw,scale,32,0.672088141214557,0.0143985601439856,0.9035349855651694,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,subscale,36,0.6598967881659276,9.999000099990002e-05,0.7653350468172546,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv

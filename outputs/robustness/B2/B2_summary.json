@@ -1,0 +1,13 @@
+{
+  "n_models": 9,
+  "mean_slope_continuous": 1.5970182775061545,
+  "mean_slope_discrete": 0.7116149734071031,
+  "mean_delta_cont_to_discrete": 0.8854033040990515,
+  "mean_mantel_continuous": 0.813065088883234,
+  "mean_mantel_discrete": 0.7585599694986963,
+  "paired_test": {
+    "t_p": 2.437721771271465e-11,
+    "wilcoxon_p": 0.00390625,
+    "mean_diff": 0.8854033040990515
+  }
+}

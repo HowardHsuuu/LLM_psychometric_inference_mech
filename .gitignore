@@ -1,0 +1,45 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.env
+.venv/
+*.log
+*.npz
+*.npy
+*.pt
+*.pth
+*.safetensors
+*.done
+
+# Local raw/staging data; not part of the public artifact.
+data/human/
+data/llm_behavior/
+data/llm_behavior_culture/
+data/llm_behavior_prompt_variants/
+
+# Large generated caches stay local. Small final statistics, figures, and
+# summary tables under outputs/ are intentionally trackable.
+outputs/logs/
+outputs/behavior/*/
+!outputs/behavior/*.csv
+!outputs/behavior/factorial_analysis/
+!outputs/behavior/factorial_analysis/**
+!outputs/behavior/figures/
+!outputs/behavior/figures/**
+outputs/behavior_culture/
+!outputs/behavior_culture/
+outputs/behavior_culture/*
+!outputs/behavior_culture/_comparison/
+!outputs/behavior_culture/_comparison/*.csv
+outputs/mechanistic/results_*/
+outputs/mechanistic/factorial_geometry/*/*/*
+!outputs/mechanistic/factorial_geometry/*/*/run_config.json
+!outputs/mechanistic/factorial_geometry/*/*/geometry_summary.csv
+!outputs/mechanistic/factorial_geometry/*/*/factor_readout_L*.csv
+outputs/robustness/.done/
+outputs/**/.progress.json
+outputs/**/.extraction_done
+
+reports/docs/
+reports/manuscript/

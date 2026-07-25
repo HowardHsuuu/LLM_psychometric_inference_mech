@@ -1,0 +1,28 @@
+{
+  "specific_pair_influence_top3": [
+    {
+      "dropped_pair": "POM_Peace_of_Mind \u00d7 SelfConst_Independent_self",
+      "mean_delta": 1.7098850237326215,
+      "mean_abs_delta": 1.7098850237326217,
+      "n": 9
+    },
+    {
+      "dropped_pair": "SelfConst_Independent_self \u00d7 SelfConst_Interdependent_self",
+      "mean_delta": -0.4509872754433504,
+      "mean_abs_delta": 0.45098727544335027,
+      "n": 9
+    },
+    {
+      "dropped_pair": "POM_Peace_of_Mind \u00d7 SelfConst_Interdependent_self",
+      "mean_delta": 0.12275252008544084,
+      "mean_abs_delta": 0.12275252008544084,
+      "n": 9
+    }
+  ],
+  "cross_scale_only_paired": {
+    "n_models": 9,
+    "mean_slope_diff": -0.7295946220908063,
+    "t_p": 1.4377361224166174e-05,
+    "wilcoxon_p": 0.00390625
+  }
+}

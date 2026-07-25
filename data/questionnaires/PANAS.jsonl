@@ -1,0 +1,21 @@
+{"_metadata": true, "scale_id": "panas", "scale_name": "Positive and Negative Affect Schedule (PANAS)", "scale_name_zh": "正負向情緒量表", "n_items": 20, "response_range": [1, 5], "response_labels": ["從來沒有", "偶爾如此", "有時如此", "經常如此", "總是如此"], "instruction": "針對以下的情緒與特質形容詞，請你評估自己在日常生活中，有多常經驗到以下這些感受。", "instruction_en": "Indicate the extent you have felt this way over the past week.", "reverse_items": [], "subscales": [{"name": "Positive_Affect", "items": [1,3,5,9,10,12,14,16,17,19], "scoring": "mean"}, {"name": "Negative_Affect", "items": [2,4,6,7,8,11,13,15,18,20], "scoring": "mean"}]}
+{"item_id": "panas_01", "item_number": 1, "text": "感興趣的", "text_en": "Interested", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_02", "item_number": 2, "text": "悲傷的", "text_en": "Distressed", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_03", "item_number": 3, "text": "興奮的", "text_en": "Excited", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_04", "item_number": 4, "text": "沮喪的", "text_en": "Upset", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_05", "item_number": 5, "text": "堅強的", "text_en": "Strong", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_06", "item_number": 6, "text": "內疚的", "text_en": "Guilty", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_07", "item_number": 7, "text": "驚嚇的", "text_en": "Scared", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_08", "item_number": 8, "text": "懷有敵意的", "text_en": "Hostile", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_09", "item_number": 9, "text": "熱衷的", "text_en": "Enthusiastic", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_10", "item_number": 10, "text": "驕傲的", "text_en": "Proud", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_11", "item_number": 11, "text": "煩躁的", "text_en": "Irritable", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_12", "item_number": 12, "text": "機警的", "text_en": "Alert", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_13", "item_number": 13, "text": "羞愧的", "text_en": "Ashamed", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_14", "item_number": 14, "text": "受到鼓舞的", "text_en": "Inspired", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_15", "item_number": 15, "text": "緊張的", "text_en": "Nervous", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_16", "item_number": 16, "text": "果決的", "text_en": "Determined", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_17", "item_number": 17, "text": "專注的", "text_en": "Attentive", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_18", "item_number": 18, "text": "不安的", "text_en": "Jittery", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}
+{"item_id": "panas_19", "item_number": 19, "text": "積極的", "text_en": "Active", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Positive_Affect"}
+{"item_id": "panas_20", "item_number": 20, "text": "恐懼的", "text_en": "Afraid", "response_options": [1,2,3,4,5], "reverse_coded": false, "subscale": "Negative_Affect"}

@@ -1,0 +1,39 @@
+{
+  "n_models": 9,
+  "snr_proxy_note": "SNR proxy from scaling_summary.csv mean_reliability; this is the contrastive-directions pipeline reliability, not item-level. Proper correction would require split-half reliability of the item-level predictions themselves.",
+  "observed_slope_range": [
+    1.384,
+    1.769
+  ],
+  "observed_slope_spread": 0.385,
+  "baseline_slope_range": [
+    1.109578814284743,
+    1.4753744130940736
+  ],
+  "adjusted_slope_range": [
+    -0.09137441309407368,
+    0.659421185715257
+  ],
+  "adjusted_slope_spread": 0.7507955988093307,
+  "mean_adjusted_slope": 0.2663997104081592,
+  "instruct_models_adjusted_mean": 0.2621899301163119,
+  "base_models_adjusted_mean": 0.2811339414296248,
+  "correlations": {
+    "observed_slope_vs_beh_slope": {
+      "r": 0.912548490484655,
+      "p": 0.0005973211850982655
+    },
+    "adjusted_slope_vs_beh_slope": {
+      "r": 0.8756038885030928,
+      "p": 0.0019753021320454596
+    },
+    "log_size_vs_observed_slope": {
+      "r": 0.810950847220237,
+      "p": 0.007996626890337505
+    },
+    "log_size_vs_adjusted_slope": {
+      "r": 0.6780990858413992,
+      "p": 0.044691688449259505
+    }
+  }
+}

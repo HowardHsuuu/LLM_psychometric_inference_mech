@@ -1,0 +1,4 @@
+dropped_pair,mean_delta,mean_abs_delta,n
+POM_Peace_of_Mind × SelfConst_Independent_self,1.7098850237326215,1.7098850237326217,9
+SelfConst_Independent_self × SelfConst_Interdependent_self,-0.4509872754433504,0.45098727544335027,9
+POM_Peace_of_Mind × SelfConst_Interdependent_self,0.12275252008544084,0.12275252008544084,9

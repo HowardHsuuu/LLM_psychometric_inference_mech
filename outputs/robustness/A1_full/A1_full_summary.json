@@ -1,0 +1,39 @@
+{
+  "n_total_runs": 400,
+  "grid_shape": {
+    "hidden_dims": [
+      896,
+      2048,
+      4096,
+      5120
+    ],
+    "snr_levels": [
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "n_seeds": 20,
+    "items_per_subscale": 5,
+    "alpha_item": 0.75
+  },
+  "realistic_snr_<=3": {
+    "slope_vs_ref_mean": 1.2671141847578238,
+    "slope_vs_ref_max": 1.624884804432108,
+    "slope_vs_human_mean": 1.2667731219202039,
+    "slope_vs_human_max": 1.7538884158654087,
+    "slope_vs_human_p95": 1.557983557019103
+  },
+  "high_snr_>3": {
+    "slope_vs_ref_mean": 1.0630452301994304,
+    "slope_vs_human_mean": 1.0689265819838978,
+    "slope_vs_human_max": 1.2044786046846085
+  },
+  "paper_real_slope_range": [
+    1.38,
+    1.77
+  ],
+  "elapsed_sec": 1034.566434621811,
+  "verdict": "MODERATE: pure pipeline inflation at realistic SNR averages 1.267. Non-trivial but cannot alone explain the real-model range [1.38, 1.77] \u2014 substantial portion must come from genuine representational amplification."
+}

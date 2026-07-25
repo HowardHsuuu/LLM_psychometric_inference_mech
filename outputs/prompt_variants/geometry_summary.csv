@@ -1,0 +1,13 @@
+model,variant,level,layer,mantel_r,mantel_p,slope,source
+qwen14b_instruct,baseline_raw,subscale,16,0.4452734152598494,9.999000099990002e-05,0.5154806001656843,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,scale,16,0.6415845490968741,0.0236976302369763,0.8673529987802724,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,subscale,20,0.4415405400735251,9.999000099990002e-05,0.5457989158379134,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,scale,20,0.6473449608782997,0.0248975102489751,0.9172201440819177,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,subscale,24,0.4662579441226265,9.999000099990002e-05,0.6072826737730757,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,scale,24,0.6453760398438647,0.0257974202579742,0.9681020792082669,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,subscale,28,0.5101359734794804,9.999000099990002e-05,0.6426064671098667,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,scale,28,0.6529792329169763,0.0206979302069793,0.92606245611648,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,subscale,32,0.6180993490100217,9.999000099990002e-05,0.7754730186686797,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,scale,32,0.672088141214557,0.0143985601439856,0.9035349855651694,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,subscale,36,0.6598967881659276,9.999000099990002e-05,0.7653350468172546,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,baseline_raw,scale,36,0.6502254318175766,0.0166983301669833,0.7571991147919209,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv

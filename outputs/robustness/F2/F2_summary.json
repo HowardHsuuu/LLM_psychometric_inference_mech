@@ -1,0 +1,29 @@
+{
+  "n_pairs": 7,
+  "mean_delta_mantel": 0.20550935881757018,
+  "mean_delta_slope": 0.5774237336310349,
+  "mean_delta_reliability": 0.07246466229470183,
+  "mean_delta_beh_slope": 0.22137161337332326,
+  "paired_tests": {
+    "mantel": {
+      "t_p": 0.06661671294573464,
+      "wilcoxon_p": 0.109375,
+      "mean_diff": 0.20550935881757018
+    },
+    "slope": {
+      "t_p": 0.06216526186806655,
+      "wilcoxon_p": 0.078125,
+      "mean_diff": 0.5774237336310349
+    },
+    "reliability": {
+      "t_p": 0.2122754059735973,
+      "wilcoxon_p": 0.296875,
+      "mean_diff": 0.07246466229470183
+    },
+    "beh_slope": {
+      "t_p": 0.010940656452065618,
+      "wilcoxon_p": 0.03125,
+      "mean_diff": 0.22137161337332326
+    }
+  }
+}

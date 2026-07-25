@@ -1,0 +1,24 @@
+{
+  "n_models": 9,
+  "pooled_stats": {
+    "cross_scale": {
+      "n_pairs": 918,
+      "mean_abs": 0.28408500096855144,
+      "median_abs": 0.27664444603197275,
+      "mean_signed": 0.020378974219551493
+    },
+    "within_scale": {
+      "n_pairs": 162,
+      "mean_abs": 0.2926954988350443,
+      "median_abs": 0.2988194103218542,
+      "mean_signed": -0.061219867008332346
+    }
+  },
+  "paired_test": {
+    "mean_abs_within": 0.2926954988350443,
+    "mean_abs_cross": 0.2840850009685514,
+    "ratio": 1.0303095828260433,
+    "t_p": 0.23671497538059993,
+    "wilcoxon_p": 0.25
+  }
+}
