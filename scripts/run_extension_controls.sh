@@ -233,8 +233,15 @@ export PYTHONPATH="${ROOT}/src${PYTHONPATH:+:${PYTHONPATH}}"
 export MPLBACKEND="${MPLBACKEND:-Agg}"
 export MPLCONFIGDIR="${MPLCONFIGDIR:-/tmp/psychometric_mpl_cache}"
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-/tmp/psychometric_xdg_cache}"
+export HF_HOME="${HF_HOME:-${HOME}/.cache/huggingface}"
+if [[ -z "${HF_TOKEN:-}" && -f "${HF_HOME}/token" ]]; then
+  export HF_TOKEN="$(<"${HF_HOME}/token")"
+fi
+if [[ -n "${HF_TOKEN:-}" && -z "${HUGGINGFACE_HUB_TOKEN:-}" ]]; then
+  export HUGGINGFACE_HUB_TOKEN="${HF_TOKEN}"
+fi
 
-mkdir -p "${LOG_DIR}" "${MPLCONFIGDIR}" "${XDG_CACHE_HOME}/fontconfig"
+mkdir -p "${LOG_DIR}" "${MPLCONFIGDIR}" "${XDG_CACHE_HOME}/fontconfig" "${HF_HOME}"
 TIMESTAMP="$(date +%Y%m%d_%H%M%S)"
 
 print_command() {

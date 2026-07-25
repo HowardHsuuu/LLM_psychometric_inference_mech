@@ -194,12 +194,14 @@ def load_real_profiles(
     profiles = []
     for src in data_sources:
         src_path = BASE_DIR / src
+        dataset_name = src_path.parent.name
         df = pd.read_csv(src_path)
         df = un_reverse_df(df, scale_file)
         id_col = next((c for c in ["Subject_ID", "ID", "Scan_ID", "id"] if c in df.columns), None)
         q_cols = [c for c in df.columns if c.startswith("Q")]
         for idx, row in df.iterrows():
-            sid = str(row[id_col]) if id_col else f"S{idx:04d}"
+            raw_sid = str(row[id_col]) if id_col else f"S{idx:04d}"
+            sid = raw_sid if raw_sid.startswith(dataset_name) else f"{dataset_name}_{raw_sid}"
             row_dict = {c: row[c] for c in q_cols}
             profiles.append(build_profile_from_csv_row(row_dict, scale_def, items, sid))
     return profiles
@@ -228,6 +230,29 @@ def deranged_profiles(
 
     # Deterministic fallback: a cyclic shift is a valid derangement for n > 1.
     return profiles[1:] + profiles[:1]
+
+
+def sample_profiles(
+    profiles: list[ScaleAProfile],
+    max_subjects: int | None,
+    seed: int,
+    selected_subject_ids: list[str] | None = None,
+) -> tuple[list[ScaleAProfile], list[str]]:
+    if selected_subject_ids is None:
+        if max_subjects is None or max_subjects >= len(profiles):
+            selected_subject_ids = [profile.subject_id for profile in profiles]
+        else:
+            rng = np.random.default_rng(seed)
+            selected = np.sort(rng.choice(len(profiles), size=max_subjects, replace=False))
+            selected_subject_ids = [profiles[i].subject_id for i in selected]
+
+    selected_subject_set = set(selected_subject_ids)
+    sampled = [profile for profile in profiles if profile.subject_id in selected_subject_set]
+    if len(sampled) != len(selected_subject_ids):
+        found = {profile.subject_id for profile in sampled}
+        missing = sorted(selected_subject_set - found)
+        raise ValueError(f"Missing selected subject ids for this scale: {missing[:5]}")
+    return sampled, selected_subject_ids
 
 
 def option_probabilities(logprobs: dict[str, float]) -> dict[str, float]:
@@ -284,13 +309,13 @@ def output_root_for(model: ModelSpec, variant: VariantSpec, readout: str) -> Pat
     return PROMPT_VARIANT_OUTPUT_DIR / experiment_name(model, variant, readout)
 
 
-def rotation_complete(output_dir: Path, expected_n: int) -> bool:
+def rotation_complete(output_dir: Path, expected_subject_ids: Iterable[str]) -> bool:
     progress_file = output_dir / ".progress.json"
     if not progress_file.exists():
         return False
     with progress_file.open() as f:
         progress = json.load(f)
-    return len(progress) >= expected_n
+    return all(subject_id in progress for subject_id in expected_subject_ids)
 
 
 def run_all_rotations(
@@ -301,22 +326,27 @@ def run_all_rotations(
     max_subjects: int | None = None,
     seed: int = 42,
 ) -> None:
+    selected_subject_ids = None
     for scale_index, (scale_a_name, scale_a_def_path) in enumerate(SCALES, 1):
         output_dirs = {
             readout: data_root_for(model_spec, variant, readout) / f"persona_{scale_a_name}"
             for readout in readouts
         }
-        expected_n = max_subjects or 272
-        if all(rotation_complete(output_dir, expected_n) for output_dir in output_dirs.values()):
+        scale_a_def, scale_a_items = load_scale_definition(scale_a_def_path)
+        data_sources = [f"data/human/{ds}/{scale_a_name}.csv" for ds in HUMAN_DATASETS]
+        target_profiles = load_real_profiles(data_sources, scale_a_def, scale_a_items, scale_a_name)
+        target_profiles, selected_subject_ids = sample_profiles(
+            target_profiles,
+            max_subjects,
+            seed,
+            selected_subject_ids,
+        )
+        expected_subject_ids = [profile.subject_id for profile in target_profiles]
+        if all(rotation_complete(output_dir, expected_subject_ids) for output_dir in output_dirs.values()):
             print(f"  Round {scale_index}/7: {scale_a_name} already done")
             continue
 
         print(f"\n  Round {scale_index}/7: Persona = {scale_a_name}")
-        scale_a_def, scale_a_items = load_scale_definition(scale_a_def_path)
-        data_sources = [f"data/human/{ds}/{scale_a_name}.csv" for ds in HUMAN_DATASETS]
-        target_profiles = load_real_profiles(data_sources, scale_a_def, scale_a_items, scale_a_name)
-        if max_subjects and max_subjects < len(target_profiles):
-            target_profiles = target_profiles[:max_subjects]
 
         prompt_profiles = (
             deranged_profiles(target_profiles, seed=seed, rotation_index=scale_index)
