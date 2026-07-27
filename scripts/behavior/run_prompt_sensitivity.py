@@ -3,6 +3,7 @@
 
 The default variants are intentionally small and targeted:
 
+- standard_prompt: original raw questionnaire prompt with the source scale name.
 - no_scale_name: remove the source scale name from the persona prompt.
 - chat_template: use each instruct model's tokenizer chat template.
 
@@ -72,7 +73,7 @@ SCALES = [
 ]
 
 HUMAN_DATASETS = ["SED", "SEDC", "SEDD"]
-DEFAULT_VARIANTS = ("no_scale_name", "chat_template")
+DEFAULT_VARIANTS = ("standard_prompt", "no_scale_name", "chat_template")
 DEFAULT_MODELS = ("qwen14b_instruct",)
 DEFAULT_READOUTS = ("argmax", "expected_value")
 READOUTS = ("argmax", "expected_value")
@@ -88,6 +89,11 @@ class VariantSpec:
 
 
 VARIANTS = {
+    "standard_prompt": VariantSpec(
+        name="standard_prompt",
+        system_template="questionnaire",
+        prompt_format="raw",
+    ),
     "no_scale_name": VariantSpec(
         name="no_scale_name",
         system_template="questionnaire_no_scale_name",

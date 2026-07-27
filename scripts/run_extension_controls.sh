@@ -3,7 +3,7 @@
 #
 # Default stages:
 #   1. factorial_geometry: Big Five factorial profiles -> activation geometry
-#   2. prompt_behavior: no-scale-name/chat-template x argmax/expected-value
+#   2. prompt_behavior: standard/no-scale-name/chat-template x argmax/expected-value
 #   3. prompt_geometry: no-scale-name/chat-template geometry robustness
 #   4. finalization: statistics summary, release bundle rebuild, bundle verify
 
@@ -26,7 +26,8 @@ MAX_SUBJECTS=""
 N_REPLICATIONS=3
 N_PROBES=20
 N_PERMUTATIONS=1000
-PROMPT_VARIANTS=(no_scale_name chat_template)
+PROMPT_BEHAVIOR_VARIANTS=(standard_prompt no_scale_name chat_template)
+PROMPT_GEOMETRY_VARIANTS=(no_scale_name chat_template)
 READOUTS=(argmax expected_value)
 LOG_DIR="${ROOT}/outputs/logs"
 
@@ -70,7 +71,9 @@ Prompt behavior / prompt geometry options:
   --max-subjects N               Optional smoke-test cap for prompt behavior.
   --n-replications N             Prompt geometry replications. Default: 3.
   --n-probes N                   Prompt geometry probes. Default: 20.
-  --prompt-variants "a b"        Default: "no_scale_name chat_template".
+  --prompt-variants "a b"        Set both behavior and geometry variants.
+  --behavior-variants "a b"      Default: "standard_prompt no_scale_name chat_template".
+  --geometry-variants "a b"      Default: "no_scale_name chat_template".
   --readouts "argmax expected_value"
 
 Examples:
@@ -213,7 +216,16 @@ while [[ $# -gt 0 ]]; do
       shift 2
       ;;
     --prompt-variants)
-      read -r -a PROMPT_VARIANTS <<< "$2"
+      read -r -a PROMPT_BEHAVIOR_VARIANTS <<< "$2"
+      read -r -a PROMPT_GEOMETRY_VARIANTS <<< "$2"
+      shift 2
+      ;;
+    --behavior-variants)
+      read -r -a PROMPT_BEHAVIOR_VARIANTS <<< "$2"
+      shift 2
+      ;;
+    --geometry-variants)
+      read -r -a PROMPT_GEOMETRY_VARIANTS <<< "$2"
       shift 2
       ;;
     --readouts)
@@ -326,7 +338,7 @@ for MODEL in "${MODELS[@]}"; do
     prompt_behavior_cmd=(
       "${PYTHON_BIN}" scripts/behavior/run_prompt_sensitivity.py
       --models "${MODEL}"
-      --variants "${PROMPT_VARIANTS[@]}"
+      --variants "${PROMPT_BEHAVIOR_VARIANTS[@]}"
       --readouts "${READOUTS[@]}"
       --device "${DEVICE}"
       --skip_existing
@@ -341,7 +353,7 @@ for MODEL in "${MODELS[@]}"; do
     prompt_geometry_cmd=(
       "${PYTHON_BIN}" -m psychometric_inference.mechanisms.prompt_geometry
       --models "${MODEL}"
-      --variants "${PROMPT_VARIANTS[@]}"
+      --variants "${PROMPT_GEOMETRY_VARIANTS[@]}"
       --n_replications "${N_REPLICATIONS}"
       --n_probes "${N_PROBES}"
       --skip_existing
