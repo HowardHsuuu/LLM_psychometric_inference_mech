@@ -1,0 +1,15 @@
+{
+  "model": "qwen14b_instruct",
+  "hf_id": "Qwen/Qwen2.5-14B-Instruct",
+  "source_scale": "big_five",
+  "mode": "factorial",
+  "layers": [
+    24
+  ],
+  "target_items_per_subscale": 1,
+  "n_profiles": 243,
+  "n_target_items": 11,
+  "prompt_format": "raw",
+  "system_prompt_variant": "questionnaire",
+  "include_source_scale": false
+}

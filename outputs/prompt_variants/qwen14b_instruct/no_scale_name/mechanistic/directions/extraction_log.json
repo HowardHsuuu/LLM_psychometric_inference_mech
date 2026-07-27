@@ -1,0 +1,34 @@
+{
+  "model_id": "Qwen/Qwen2.5-14B-Instruct",
+  "prompt_format": "raw",
+  "system_prompt_variant": "no_scale_name",
+  "n_replications": 3,
+  "n_probes": 20,
+  "layers": [
+    16,
+    20,
+    24,
+    28,
+    32,
+    36
+  ],
+  "timestamp": "2026-07-26 10:15:40",
+  "subscale_targets": [
+    "IRI_Perspective_taking",
+    "IRI_Fantasy",
+    "IRI_Empathic_concern",
+    "IRI_Personal_distress",
+    "PANAS_Positive_Affect",
+    "PANAS_Negative_Affect",
+    "POM_Peace_of_Mind",
+    "BigFive_Extraversion",
+    "BigFive_Agreeableness",
+    "BigFive_Conscientiousness",
+    "BigFive_Neuroticism",
+    "BigFive_Openness",
+    "SelfConst_Independent_self",
+    "SelfConst_Interdependent_self",
+    "LifeSat_Life_Satisfaction",
+    "Lonely_Loneliness"
+  ]
+}

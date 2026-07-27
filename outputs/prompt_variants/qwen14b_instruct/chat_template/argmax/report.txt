@@ -1,0 +1,15 @@
+Implicit Psychometric Structure Analysis (3 levels)
+=====================================================
+Human data: ['/home/labchen/Desktop/LLM_psychometric_inference_mech/data/human/SED', '/home/labchen/Desktop/LLM_psychometric_inference_mech/data/human/SEDC', '/home/labchen/Desktop/LLM_psychometric_inference_mech/data/human/SEDD']
+LLM data:   /home/labchen/Desktop/LLM_psychometric_inference_mech/data/llm_behavior_prompt_variants/qwen14b_instruct/chat_template/argmax
+
+Summary:
+  item                  r=0.6830  Mantel p=0.0002  RMSE=0.2216  (N=5086)
+  item_within           r=0.8821  RMSE=0.1326  (N=1110)
+  item_between          r=0.6337  RMSE=0.2406  (N=3976)
+  subscale              r=0.7596  Mantel p=0.0002  RMSE=0.3062  (N=112)
+  subscale_within       r=0.8438  RMSE=0.1365  (N=18)
+  subscale_between      r=0.7656  RMSE=0.3289  (N=94)
+  scale                 r=0.8544  Mantel p=0.0016  RMSE=0.2583  (N=20)
+
+All outputs saved to: /home/labchen/Desktop/LLM_psychometric_inference_mech/outputs/prompt_variants/qwen14b_instruct/chat_template/argmax

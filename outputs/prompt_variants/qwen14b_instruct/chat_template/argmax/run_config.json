@@ -1,0 +1,9 @@
+{
+  "model": "qwen14b_instruct",
+  "hf_id": "Qwen/Qwen2.5-14B-Instruct",
+  "variant": "chat_template",
+  "readout": "argmax",
+  "system_template": "questionnaire",
+  "prompt_format": "chat_template",
+  "profile_permutation": false
+}

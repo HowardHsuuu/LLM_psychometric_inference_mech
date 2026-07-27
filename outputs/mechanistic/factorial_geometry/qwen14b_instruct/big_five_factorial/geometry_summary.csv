@@ -1,0 +1,2 @@
+layer,n_profiles,n_target_observations,n_profile_features,profile_geometry_mantel_r,profile_geometry_mantel_p,mean_factor_readout_r,mean_factor_readout_r2,feature_columns
+24,243,2673,5,0.4759336053102146,0.000999000999000999,0.9962167297948461,0.9924329886347394,BigFive_Extraversion;BigFive_Agreeableness;BigFive_Conscientiousness;BigFive_Neuroticism;BigFive_Openness

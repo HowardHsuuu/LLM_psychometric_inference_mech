@@ -1,0 +1,9 @@
+{
+  "model": "qwen14b_instruct",
+  "hf_id": "Qwen/Qwen2.5-14B-Instruct",
+  "variant": "no_scale_name",
+  "readout": "expected_value",
+  "system_template": "questionnaire_no_scale_name",
+  "prompt_format": "raw",
+  "profile_permutation": false
+}

@@ -1,3 +1,3 @@
 model,variant,level,layer,mantel_r,mantel_p,slope,source
-qwen14b_instruct,baseline_raw,scale,32,0.672088141214557,0.0143985601439856,0.9035349855651694,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
-qwen14b_instruct,baseline_raw,subscale,36,0.6598967881659276,9.999000099990002e-05,0.7653350468172546,outputs/mechanistic/results_qwen14b_instruct/geometry/geometry_results.csv
+qwen14b_instruct,chat_template,subscale,36,0.4969042159976325,9.999000099990002e-05,0.4573781132634957,outputs/prompt_variants/qwen14b_instruct/chat_template/mechanistic/geometry/geometry_results.csv
+qwen14b_instruct,no_scale_name,subscale,36,0.4806769965151746,0.0001999800019998,0.4656857894341957,outputs/prompt_variants/qwen14b_instruct/no_scale_name/mechanistic/geometry/geometry_results.csv
